@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container{
+        border: 1px solid lightgray;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    p{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        Dentro do DIV
+    </div>
+
+<a href="adjascent.html"><button>adjascent</button></a>
+    <script>
+        let asd = document.querySelector(".container")
+        //insertAdjacentText
+      //  asd.insertAdjacentText("beforebegin", "AAAA")
+      //  asd.insertAdjacentText("afterbegin", "BBBB")
+      //  asd.insertAdjacentText("beforeend", "CCCC")
+      //  asd.insertAdjacentText("afterend", "DDDD")
+        
+        asd.insertAdjacentHTML("beforebegin", "<strong>AAAA</strong>")
+        asd.insertAdjacentHTML("afterbegin", "<strong>BBBB</strong>")
+        asd.insertAdjacentHTML("beforeend", "<strong>CCCC</strong>")
+        asd.insertAdjacentHTML("afterend", "<strong>DDDD</strong>")
+
+
+    </script>
+</body>

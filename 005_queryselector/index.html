@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .primeira_div{
+            color: red;
+        }
+        ul>li:last-child{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        
+    </ul>
+
+
+    <div class="primeira_div">Texto 1 dentro de um div</div>
+    <div>Texto 2 dentro de um div</div>
+
+    <script>
+/*
+querySelector
+querySelectorAll
+*/
+
+        let e=document.querySelector('.primeira_div');
+        console.log(e);
+        let f=document.querySelector('ul>li:last-child');
+        console.log(f);
+    </script>
+</body>

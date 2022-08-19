@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .noticia{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgb(150, 150, 150);
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 50px;
+            margin: 50px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="noticia">
+        <h1>Título da notícia</h1>
+        <h3 id="sumario">Sumário da notícia</h3>
+        <img src="news.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores accusamus repudiandae minima ipsa quo voluptate laudantium quam ab sed maxime, vel quisquam reiciendis adipisci molestias! Culpa quo ipsa minima.</p>
+    </div>
+<script>
+let elemento =document.querySelector('h3')
+if(elemento.hasAttribute("id")){console.log("SIM");}
+console.log(elemento.getAttribute("id"));
+elemento.setAttribute("title","Título do sumário")
+let imagem = document.querySelector("img")
+console.log(imagem.attributes["alt"]);
+</script>
+
+</body>

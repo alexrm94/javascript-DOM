@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            margin: 50px auto;
+        }
+
+        .centrar{
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="centrar">
+        <h1>Texto original de HTML</h1>
+        <button onclick="alterar_texto()">Clique aqui</button>
+        <p>Também posso clicar aqui</p>
+    </div>
+
+    <script>
+
+        document.querySelector("p").onclick = function(){
+            document.querySelector("h1").textContent="Texto alterado no evento onclick no parágrafo"
+        
+        }
+        function alterar_texto(){
+            document.querySelector("h1").textContent="Texto alterado no evento onclick"
+        }      
+    </script>
+</body>

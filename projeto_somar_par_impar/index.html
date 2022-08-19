@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Increment count when button is clicked</title>
+</head>
+<style>
+h1{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+button{
+    margin-bottom: 30px;
+    height: 30px;
+    
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    
+}
+
+.cf:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+#btn, #btn2{
+    float:left;
+    width:20%;
+    min-width: 100px;
+    
+}
+#btn{
+    margin-left: 30%;
+}
+
+
+
+
+</style>
+<body>
+<h1>Clique para mudar o valor do número</h1>
+
+<p class="cf">
+    
+      <button id="btn" onclick="aumentar()"> Aumentar</button>
+      <button id="btn2" onclick="diminuir()"> Diminuir</button>
+    
+</p>
+
+    <p>
+        Botão clicado <span id="display">0</span> vezes
+    </p>
+
+    <p>O número é <span id="results">par</span></p>
+
+    <script type="text/javascript">
+        let count = 0;
+        let btn = document.getElementById("btn");
+        let btn2 = document.getElementById("btn2");
+        let disp = document.getElementById("display");
+        let results = document.getElementById("results");
+
+        function aumentar() {
+            count++;
+            disp.innerHTML = count;
+            evenOrOdd();
+        }
+        function diminuir() {
+            if (count > 0) {
+                count--;
+                disp.innerHTML = count;
+                evenOrOdd();
+            }
+
+
+
+        }
+        function evenOrOdd() {
+            
+
+            if (disp.innerHTML % 2 == 0) {
+                results.innerHTML = "par"
+            }
+            else {
+                results.innerHTML = "impar"
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
